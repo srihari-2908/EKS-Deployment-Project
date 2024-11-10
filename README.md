@@ -14,4 +14,4 @@ This project demonstrates how to deploy an application on an Amazon EKS cluster 
 ## Quick Start
 1. [EKS Setup](./eks-setup.md)
 2. [Application Deployment](./app-deployment.md)
-3. [IAM Setup](./iam-setup.md)
+3. [IAM Setup](./iam-ALB-setup.md)
