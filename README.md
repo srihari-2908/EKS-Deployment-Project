@@ -8,7 +8,7 @@ This project demonstrates how to deploy an application on an Amazon EKS cluster 
 
 ## Prerequisites
 - **AWS CLI**: [Installation guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
-- **eksctl**: [Installation guide](https://eksctl.io/)
+- **eksctl**: [Installation guide](https://eksctl.io/installation/)
 - **kubectl**: [Installation guide](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
 
 ## Quick Start
