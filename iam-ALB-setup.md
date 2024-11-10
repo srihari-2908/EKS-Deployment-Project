@@ -81,8 +81,13 @@ kubectl get deployment -n kube-system aws-load-balancer-controller
 ![image](https://github.com/user-attachments/assets/881c52ea-32b3-4f28-813a-8ec790041aed)
 
 - Now, open the address in your browser to access the web application we deployed. (Wait until the load balancer reaches an active state. Once active, you will be able to access your application. This may take up to 2 minutes.)
-- 
+
 ![image](https://github.com/user-attachments/assets/43b7a7b3-b2f7-4ce8-804b-fab7ee5d47ef)
 
 ![image](https://github.com/user-attachments/assets/b52c5c66-7fbe-481f-b021-98e79c75125d)
 
+## 7. Delete the cluster
+- After successful deployment, delete the cluster using the following command:
+```bash
+eksctl delete cluster --name demo-cluster --region us-east-1
+```
