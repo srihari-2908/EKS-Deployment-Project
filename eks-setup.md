@@ -11,10 +11,10 @@ Purpose: Step-by-step guide to create EKS cluster.
 ```bash
   eksctl create cluster --name demo-cluster --region us-east-1 --fargate
 ```
-- On successful creation, you can see the below output..
+- On successful EKS cluster creation, you can see the below output.
 ![image](https://github.com/user-attachments/assets/1df0d0ef-daa3-473e-b72b-17e9d4fd3204)
 
-- Now you can also verify the newly created cluster from your AWS Console.
+- Now, you can also verify the newly created cluster from your AWS Console.
 ![image](https://github.com/user-attachments/assets/a67f9f4a-f596-4594-bb1c-2b8df8b86972)
 
 ## 3. Update kubeconfig
@@ -34,6 +34,10 @@ eksctl create fargateprofile \
     --name alb-sample-app \
     --namespace game-2048
 ```
-
+- On successful Fargate profile creation, you can see the below output.
 ![image](https://github.com/user-attachments/assets/bf3d9f41-5d6c-4acd-b4cb-f89e6cd6c17b)
+
+- You can verify the Fargate profile - alb-sample-app from your AWS Console -- Select your EKS Cluster -- Compute
+![image](https://github.com/user-attachments/assets/930cc962-aabb-486b-8662-c861b1f26b01)
+
 
