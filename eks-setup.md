@@ -8,19 +8,21 @@ Purpose: Step-by-step guide to create EKS cluster.
 ## 2. Create EKS Cluster
 - Run the following command to create a cluster with Fargate:
 
-  ```bash
+```bash
   eksctl create cluster --name demo-cluster --region us-east-1 --fargate
+```
   
 ## 3. Update kubeconfig
 - After the cluster is created, configure kubectl to access the EKS cluster:
 
-  ```bash
+```bash
 aws eks update-kubeconfig --name demo-cluster
+```
 
 ## 4. Create Fargate Profile
 - Use this command to create a Fargate profile for the game-2048 application:
 
-  ```bash
+```bash
 eksctl create fargateprofile \
     --cluster demo-cluster \
     --region us-east-1 \
