@@ -11,14 +11,14 @@ Purpose: Step-by-step guide to create EKS cluster.
   ```bash
   eksctl create cluster --name demo-cluster --region us-east-1 --fargate
   
-3. Update kubeconfig
-After the cluster is created, configure kubectl to access the EKS cluster:
+## 3. Update kubeconfig
+- After the cluster is created, configure kubectl to access the EKS cluster:
 
   ```bash
 aws eks update-kubeconfig --name demo-cluster
-```
 
-4. Use this command to create a Fargate profile for the game-2048 application:
+## 4. Create Fargate Profile
+- Use this command to create a Fargate profile for the game-2048 application:
 
   ```bash
 eksctl create fargateprofile \
